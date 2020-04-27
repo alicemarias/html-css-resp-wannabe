@@ -23,17 +23,29 @@
   text-align: center;
 }
 /* BLOCCO LEZIONI IN SCHERMO < 420PX */
-@media screen and (max-width:419) {
+@media screen and (max-width:419px) {
+
   .row {
-    width: 100%;
+    width: 90%;
+    margin-top: 30px;}
+  h1 {
+    font-size: 24px;
   }
+
   #lezioni .row>.left,
   #lezioni .row>.right {
     width: 100%;
     float: none;
   }
+  .container {
+    background-color: #ffe6b3
+  }
+  #lezioni img {
+    height: 100px;
+  }
 
 }
+/* FINE BLOCCO <420 PX */
 
 /* BLOCCO STEPS */
 #steps .row>.left,
@@ -45,6 +57,20 @@
 
 #steps {
   text-align: center;
+}
+/* BLOCCO STEPS IN SCHERMO < 420PX */
+@media screen and (max-width:419px) {
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: none;
+    width: 100%;
+  }
+  #steps img {
+  height: 110px;}
+  #steps {
+    background-color: #adebeb;
+  }
 }
 
 /* BLOCCO PERCHE */
@@ -82,4 +108,17 @@ img {
 
 .clear {
   clear: both;
+}
+
+/* COMMON IN SCHERMO < 420PX  */
+@media screen and (max-width:419px) {
+  #why img {
+   height: 70px;
+  }
+  #why {
+    background-color: #ffb3b3;
+  }
+  #why hr {
+    width: 80%;
+  }
 }
