@@ -72,6 +72,7 @@
     background-color: #adebeb;
   }
 }
+/* FINE BLOCCO <420 PX */
 
 /* BLOCCO PERCHE */
 #why {
@@ -90,6 +91,19 @@
   border-radius: 50%;
   padding: 30px
 }
+/* PERCHE IN SCHERMO < 420PX  */
+@media screen and (max-width:419px) {
+  #why img {
+   height: 70px;
+  }
+  #why {
+    background-color: #ffb3b3;
+  }
+  #why hr {
+    width: 80%;
+  }
+}
+/* FINE BLOCCO <420 PX */
 
 /* COMMON */
 .row::after {
@@ -108,17 +122,4 @@ img {
 
 .clear {
   clear: both;
-}
-
-/* COMMON IN SCHERMO < 420PX  */
-@media screen and (max-width:419px) {
-  #why img {
-   height: 70px;
-  }
-  #why {
-    background-color: #ffb3b3;
-  }
-  #why hr {
-    width: 80%;
-  }
 }
